@@ -5,7 +5,6 @@ import Adapter from 'enzyme-adapter-react-16';
 // Imports
 import React from 'react'
 import { render } from 'enzyme'
-import renderer from 'react-test-renderer'
 
 import SegmentedControl from './index'
 configure({ adapter: new Adapter() });

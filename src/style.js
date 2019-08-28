@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import colors from './common/colors'
+import colors from '../common/colors'
 
 export const SegmentedControlList = styled.div`
   display: inline-flex;
