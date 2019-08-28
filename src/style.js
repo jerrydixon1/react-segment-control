@@ -15,6 +15,7 @@ export const SegmentedControlInputWrap = styled.label`
   align-items: center;
   border: 1px solid ${colors.borderDefault};
   border-right: 0;
+  user-select: none;
   &:hover {
     cursor: pointer;
     background: ${colors.backgroundOffwhite};
