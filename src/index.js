@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { SegmentedControlList, SegmentedControlInputWrap } from './style'
-import Utils from '../common/utils'
+import Utils from './common/utils'
 
 /**
  * A radio button group component, acting as native radio inputs under the hood
