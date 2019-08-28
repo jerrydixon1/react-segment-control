@@ -53,7 +53,7 @@ class SegmentedControl extends PureComponent {
    */
   handleChange(e) {
     // Set the new option and relay the new option value to the parent
-    const option = Utils.findByIndex(this.state.options, e.target.value)
+    const option = Utils.findByIndex(this.props.options, e.target.value)
     if(option) {
       this.setState({ selectedOption: option })
       this.propagateChanges(option.value)
@@ -68,7 +68,7 @@ class SegmentedControl extends PureComponent {
   handleClick(e) {
     // Unselect if the uncheckable property was passed 
     // and relay the change to the parent
-    const option = Utils.findByIndex(this.state.options, e.target.value)
+    const option = Utils.findByIndex(this.props.options, e.target.value)
 
     if(option && this.state.selectedOption === option && this.props.uncheckable) {
       this.setState({ selectedOption: undefined })
